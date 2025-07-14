@@ -3,7 +3,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ["@nuxt/ui", "@pinia/nuxt", "@vueuse/nuxt", "@nuxt/icon"],
+  modules: [
+    "@nuxt/ui",
+    "@pinia/nuxt",
+    "@vueuse/nuxt",
+    "@nuxt/icon",
+    "@nuxtjs/google-fonts",
+  ],
 
   css: ["~/assets/css/main.css"],
   ssr: true,
@@ -15,4 +21,11 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: "2024-11-27",
+  googleFonts: {
+    families: {
+      "Plus Jakarta Sans": true,
+      Lora: true,
+    },
+    display: "swap",
+  },
 });

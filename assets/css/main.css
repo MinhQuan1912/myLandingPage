@@ -2,13 +2,24 @@
 @import "@nuxt/ui";
 @import "../theme/breakpoints.css";
 @import "../theme/color.css";
-/* ===== FONTS ===== */
-@theme {
-  --font-sans: "Public Sans", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 15px;
+  max-width: 1300px;
+  margin: auto;
 }
+::-webkit-scrollbar-thumb {
+  background: #d1a132;
+}
+:root {
+    --primary-color: #D1A132;
+    --global-bg-color: #FAF6F1;
+    --global-color-text: #606060;
+    --primary-color-text: #0A2C0F;
+}
+

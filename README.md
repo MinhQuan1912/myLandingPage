@@ -71,5 +71,14 @@ yarn preview
 # bun
 bun run preview
 ```
+Additional package
+```bash
 
+npm install @nuxtjs/google-fonts
+
+
+npm install --save-dev sass sass-loader
+
+```
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+"# myLandingPage"

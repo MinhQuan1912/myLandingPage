@@ -1,16 +1,17 @@
 <template>
-  <div class="container">
-    <UButton label="Hiện toast" @click="showToast" />
-    <h1 class="text-customRed-900">title</h1>
-  </div>
+  <section-discover-power></section-discover-power>
+  <section-about-us></section-about-us>
+  <section-why-choose-us></section-why-choose-us>
+  <section-our-product></section-our-product>
+  <section-what-we-do></section-what-we-do>
+  <section-our-key-point></section-our-key-point>
+  <section-premium-dropper></section-premium-dropper>
+  <section-benefit-of-oil></section-benefit-of-oil>
+  <section-premium-oil></section-premium-oil>
+  <section-f-a-q></section-f-a-q>
+  <section-testimonial></section-testimonial>
+  <section-latest-blog></section-latest-blog>
+  <section-c-t-a></section-c-t-a>
 </template>
-<script setup lang="ts">
-const toast = useToast();
-function showToast() {
-  toast.add({
-    title: "Thông báo thành công",
-    color: "warning",
-  });
-}
-</script>
-<style></style>
+
+<style scoped></style>

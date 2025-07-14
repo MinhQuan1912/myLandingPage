@@ -1,9 +1,12 @@
 <template>
   <div>
-    <LayoutHeader />
+    <layout-header /> 
     <main>
-      <slot />
+      <slot></slot>
     </main>
-    <LayoutFooter />
+    <layout-footer />
   </div>
 </template>
+<style lang="scss" scoped>
+
+</style>
