@@ -79,6 +79,8 @@ npm install @nuxtjs/google-fonts
 
 npm install --save-dev sass sass-loader
 
+npm install swiper
+
 ```
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 "# myLandingPage"
