@@ -11,7 +11,6 @@
   <section-f-a-q></section-f-a-q>
   <section-testimonial></section-testimonial>
   <section-latest-blog></section-latest-blog>
-  <section-c-t-a></section-c-t-a>
 </template>
 
 <style scoped></style>

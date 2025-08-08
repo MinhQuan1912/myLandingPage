@@ -1,54 +1,26 @@
 <template>
-    <div class="icon" :class="type">
+    <div class="flex justify-center items-center w-12.5 h-12.5 rounded-full bg-primary-orange border-none flex-shrink-0"
+        :class="props.type">
         <slot name="icon"></slot>
     </div>
     <slot></slot>
-    <div class="text">
-        <h3><slot name="title"></slot></h3>
-        <p><slot name="desc"></slot></p>
+    <div class="flex flex-col gap-2.5" :class="props.textGroup">
+        <h3 class="text-xl font-plus-jakarta-sans text-primary-text font-bold">
+            {{ props.title }}
+        </h3>
+        <p class="text-secondary-text font-plus-jakarta-sans text-base font-normal">
+            {{ props.desc }}
+        </p>
     </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
-    type: {
-        type: String,
-        default: ''
-    }
-})
+const props = defineProps<{
+    type?: string,
+    textGroup?: string,
+    title?: string,
+    desc?:string,
+}>()
+
+
 </script>
-
-<style lang="scss" scoped>
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    flex-shrink: 0;
-    background-color: var(--primary-color);
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    h3 {
-        font-size: 20px;
-        font-family: "Plus Jakarta Sans";
-        color: #0A2C0F;
-        font-weight: 700;
-    }
-
-    p {
-        color: var(--global-color-text);
-        font-family: "Plus Jakarta Sans";
-        font-size: 16px;
-        font-weight: 400;
-    }
-}
-
-</style>

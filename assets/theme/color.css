@@ -1,5 +1,12 @@
 /* ===== COLORS ===== */
 /* RED */
+
 @theme {
-  --color-customRed-900: #d80027;
+  --color-primary-orange: #d1a132;
+  --color-primary-background: #faf6f1;
+  --color-primary-text: #0a2c0f;
+  --color-secondary-text: #606060;
+  
+  
 }
+

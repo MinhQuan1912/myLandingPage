@@ -1,39 +1,42 @@
 <template>
-    <div class="what-we-do">
-        <div class="what-we-do__content container">
-            <div class="what-we-do__media">
-                <div class="what-we-do__media-image1">
-                    <img
-                        src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/what-we-image-1.jpg">
+    <div class="bg-primary-text px-2.5">
+        <div class="xl:container mx-auto">
+            <div class="flex flex-col lg:flex-row items-center py-12.5 lg:py-25 relative">
+                <div class="flex-1 relative p-2.5 flex flex-col">
+                    <div class="block top-0 left-0 mr-12.5">
+                        <img class="rounded-[20px] w-full object-cover"
+                            src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/what-we-image-1.jpg">
+                    </div>
+                    <div class="self-end w-62.5 xs:w-auto -mt-12.5 lg:-mt-22.5">
+                        <img class="rounded-[20px] w-full object-cover"
+                            src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/what-we-image-2.jpg">
+                    </div>
+                    <base-logo-wheel addition-class="w-27.5 xs:w-37.5 xs:w-45 h-27.5 xs:h-37.5 xs:h-45"
+                        class="absolute left-7.5 xs:left-15 bottom-8.75 xs:bottom-13.5 p-1.5 md:p-2.5 bg-primary-text rounded-full z-20"
+                        background="var(--color-primary-orange)"
+                        imageLink="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/about-section-heading-icon-cbd.svg">
+                    </base-logo-wheel>
                 </div>
-                <div class="what-we-do__media-image2">
-                    <img
-                        src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/what-we-image-2.jpg">
+                <div class="flex-1 relative flex flex-col justify-between p-2.5 lg:pl-10 gap-3.75">
+                    <base-text-content h1Class="text-white" titleClass="text-white" title="What We Do ?"
+                        heading1="Delivering precision, purity," heading2=" and care daily">
+                    </base-text-content>
+                    <div class="border-b border-[rgb(55,55,55)] flex flex-col gap-3.75 pb-7.5 lg:pb-10 ">
+                        <base-icon-text textClass="text-white lg:text-xl !font-bold" text="Crafting Precision for Every Drop" />
+                        <p class="text-white font-plus-jakarta-sans">We believe that precision matters. Our expertly
+                            designed oil dropper bottles ensure controlled
+                            dispensing allowing you to use just the right amount.</p>
+                    </div>
+                    <div class="lg:mt-7.5 flex flex-col gap-3.75 md:pb-10">
+                        <base-icon-text textClass="text-white lg:text-xl !font-bold" text="Designed for Essential
+                            Oils" />
+                        <p class="text-white font-plus-jakarta-sans">We believe that precision matters. Our expertly
+                            designed oil dropper bottles ensure controlled
+                            dispensing allowing you to use just the right amount.</p>
+                    </div>
                 </div>
-                <base-logo-wheel addition="what-we-do__media-logo--scale" class="what-we-do__media-logo"
-                    background="var(--primary-color)"
-                    imageLink="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/about-section-heading-icon-cbd.svg">
-                </base-logo-wheel>
             </div>
-            <div class="what-we-do__info">
-                <base-text-content h1Class="what-we-do__h1-class" titleClass="what-we-do__title-class"
-                    spanClass="what-we-do__span-class">
-                    <template #title>What We Do ?</template>
-                    <template #heading1>Delivering precision, purity,</template>
-                    <template #heading2>and care daily</template>
-                </base-text-content>
-                <div class="what-we-do__info--head">
-                    <base-icon-text textClass="base-icon-text">Crafting Precision for Every
-                        Drop</base-icon-text>
-                    <p>We believe that precision matters. Our expertly designed oil dropper bottles ensure controlled
-                        dispensing allowing you to use just the right amount.</p>
-                </div>
-                <div class="what-we-do__info--foot">
-                    <base-icon-text textClass="base-icon-text">Designed for Essential Oils</base-icon-text>
-                    <p>We believe that precision matters. Our expertly designed oil dropper bottles ensure controlled
-                        dispensing allowing you to use just the right amount.</p>
-                </div>
-            </div>
+
         </div>
     </div>
 </template>
@@ -42,182 +45,3 @@
 
 </script>
 
-<style lang="scss" scoped>
-.what-we-do {
-    background-color: #0a2c0f;
-}
-
-
-.what-we-do__content {
-    display: flex;
-    align-items: center;
-    padding: 100px 0;
-    position: relative;
-}
-
-
-.what-we-do__media {
-    flex: 1;
-    position: relative;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-
-    img {
-        border-radius: 20px;
-    }
-
-    .what-we-do__media-image1 {
-        display: block;
-        top: 0;
-        left: 0;
-        margin-right: 50px;
-
-        img {
-            width: 100% !important;
-            height: auto;
-        }
-    }
-
-    .what-we-do__media-image2 {
-        align-self: flex-end;
-        margin-top: -90px;
-    }
-
-    .what-we-do__media-logo {
-        left: 100px;
-        position: absolute;
-        bottom: 70px;
-        padding: 10px;
-        background-color: #0a2c0f;
-        border-radius: 50%;
-        z-index: 2;
-    }
-}
-
-
-.what-we-do__info {
-    flex: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px 10px 10px 40px;
-    gap: 15px;
-}
-
-
-.what-we-do__info--head {
-    border-bottom: 1px solid rgb(55, 55, 55);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-bottom: 40px;
-
-    p {
-        color: #ffffff;
-        font-size: 16px;
-        font-family: "Plus Jakarta Sans";
-    }
-}
-
-
-.what-we-do__info--foot {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-bottom: 40px;
-
-    p {
-        color: #ffffff;
-        font-size: 16px;
-        font-family: "Plus Jakarta Sans";
-    }
-}
-
-:deep(.base-icon-text) {
-    color: #ffffff !important;
-    font-size: 20px !important;
-    font-weight: 700 !important;
-}
-
-:deep(.what-we-do__h1-class) {
-    color: #ffffff;
-}
-
-:deep(.what-we-do__title-class) {
-    color: #ffffff;
-}
-
-@media (max-width: 1024px) {
-    .what-we-do__media {
-        width: 77%;
-
-        &-logo {
-            padding: 5px !important;
-        }
-    }
-}
-
-@media (max-width: 1024px) {
-    .what-we-do__content {
-        padding: 50px 0;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    :deep(.what-we-do__h1-class) {
-        font-size: 36px;
-    }
-
-    :deep(.what-we-do__title-class) {
-        font-size: 16px;
-    }
-
-    :deep(.what-we-do__span-class) {
-        font-size: 36px;
-    }
-
-    .what-we-do__info--head {
-        padding-bottom: 30px;
-    }
-
-    .what-we-do__info--foot {
-        padding-bottom: 0;
-        margin-top: 20px;
-    }
-
-    .what-we-do__info {
-        padding: 10px
-    }
-}
-
-@media (max-width: 426px) {
-    .what-we-do__media-image2 {
-        width: 250px;
-        margin-top: -50px;
-    }
-
-    .what-we-do__media {
-        width: 100%;
-
-        &-logo--scale {
-            transform: scale(0.7);
-        }
-
-        &-logo {
-            left: 25px !important;
-            bottom: 0 !important;
-        }
-    }
-
-    :deep(.what-we-do__h1-class) {
-        font-size: 26px;
-    }
-
-    :deep(.what-we-do__span-class) {
-        font-size: 26px;
-    }
-}
-</style>

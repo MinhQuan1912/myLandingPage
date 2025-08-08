@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
   ],
 
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css",
+  ],
   ssr: true,
   future: {
     compatibilityVersion: 4,
