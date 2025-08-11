@@ -34,7 +34,7 @@
                     <div class="p-2.5 sm:w-3/5 lg:w-1/2 lg:pr-13.75 lg:pl-18.75">
                         <div class="relative w-full">
                             <img class="w-full h-full object-cover"
-                                src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/hero-image.png">
+                                src="/images/hero-image.png">
                             <base-logo-wheel class="absolute top-0 left-0"
                                 additionClass="w-25 xs:w-30 lg:!w-35 h-25 xs:h-30 lg:!h-35">
                             </base-logo-wheel>
@@ -54,7 +54,7 @@
     position:relative;
     width: 100%;
     overflow: hidden;
-    background-image: url(https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/hero-bg.jpg);
+    background-image: url(/images/hero-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

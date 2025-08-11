@@ -46,8 +46,7 @@
                     </div>
                     <div
                         class=" flex justify-center order-2 sm:order-3 lg:order-2 sm:max-w-full lg:max-w-[calc(33.33%-20px)] sm:basis-full">
-                        <img class="max-w-60 sm:max-w-85 object-cover"
-                            src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/key-points-image.png">
+                        <img class="max-w-60 sm:max-w-85 object-cover" src="/images/key-points-image.png">
                     </div>
                     <div
                         class=" flex flex-col gap-7.5 sm:gap-10 lg:gap-15 w-full sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-20px)] order-3 sm:order-2 lg:order-3">
@@ -79,8 +78,8 @@
                 </div>
                 <div class="p-2.5 flex justify-center items-center">
                     <p class="font-plus-jakarta-sans text-secondary-text text-center">Let's make something great work
-                        together. <a href="https://demo.awaikenthemes.com/sellsmart/cbd-oil/contact-us/"
-                            class="text-primary-orange font-lora cursor-pointer underline">Get Free Quote</a></p>
+                        together. <a href="#" class="text-primary-orange font-lora cursor-pointer underline">Get Free
+                            Quote</a></p>
                 </div>
             </div>
         </div>

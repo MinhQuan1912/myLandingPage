@@ -26,7 +26,7 @@
                 <div
                     class="flex flex-1 p-7.5 items-start sm:items-center gap-5 lg:gap-7.5 rounded-[20px] bg-primary-background flex-col sm:flex-row">
                     <base-logo-wheel fill="#000000" addition="sm:w-25 lg:w-30 sm:h-25 lg:h-30"
-                        imageLink="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/icon-about-body-item.svg">
+                        imageLink="/images/icon-about-body-item.svg">
                     </base-logo-wheel>
                     <p class="font-plus-jakarta-sans text-base font-normal text-secondary-text leading-[170%]">
                         With a commitment to sustainability and customer satisfaction, we provide reliable, stylish, and
@@ -40,11 +40,11 @@
             <div class="w-full flex-1 flex md:h-full">
                 <div class="flex-1 w-full">
                     <img class="w-full lg:w-auto lg:h-full aspect-[1/0.9] md:aspect-[1/0.6] lg:aspect-[1/1.12] object-cover"
-                        src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/why-choose-image.jpg">
+                        src="/images/why-choose-image.jpg">
                 </div>
                 <div class="absolute bottom-0 z-10 max-w-20 md:max-w-25 xl:max-w-full left-3 lg:-left-12 xl:-left-27">
                     <img class="w-full h-full object-cover"
-                        src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/why-choose-product-image.png">
+                        src="/images/why-choose-product-image.png">
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@
 .why-choose-us {
     display: flex;
     position: relative;
-    background-image: url(https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/section-bg-shape-1.png);
+    background-image: url(/images/section-bg-shape-1.png);
     background-repeat: no-repeat;
     background-position: -10px 100%;
     flex-wrap: wrap;

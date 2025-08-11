@@ -1,11 +1,14 @@
 <template>
-    <div class="flex group">
+    <div class="flex group ">
         <u-button
-            class="bg-primary-orange border-none rounded-full flex justify-center items-center
+            class="relative bg-primary-orange border-none rounded-full flex justify-center items-center
              text-white font-plus-jakarta-sans px-5 lg:px-7.5 py-3.25 font-bold whitespace-nowrap text-base
-              hover:bg-white hover:text-black group-hover:bg-white group-hover:text-black cursor-pointer transition-all duration-500 ease-in-out"
+              hover:bg-transparent group-hover:bg-transparent hover:text-black group-hover:text-black cursor-pointer transition-all duration-500 ease-in-out"
               :class="props.additionClass">
-            {{ props.text }}
+            <span class="relative z-10">{{ props.text }}</span>
+            <span class="absolute z-0 left-1/2 top-0 w-0 group-hover:w-full -translate-x-1/2
+             transition-all duration-500 bg-white rounded-full h-full" :class="additionSpan">
+            </span>
         </u-button>
         <u-button
             class="rounded-full border-none flex justify-center items-center w-12.5 h-12.5 flex-shrink-0 hover:bg-white/10 cursor-pointer group-hover:rotate-45 transition-all duration-500 ease-in-out"
@@ -23,11 +26,13 @@ const props = withDefaults(defineProps<{
     fillColor?: string,
     arrow?: string,
     text?: string,
-    additionClass?:string,
+    additionClass?: string,
+    additionSpan?:string,
 }>(), {
     fillColor: 'white',
     arrow: 'bg-white/10',
     text: '',
-    additionClass:''
+    additionClass: '',
+    additionSpan:''
 })
 </script>

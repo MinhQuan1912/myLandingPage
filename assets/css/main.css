@@ -5,9 +5,6 @@
 @import "../theme/font.css";
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-/* :root {
-    --primary-color: #D1A132;
-    --global-bg-color: #FAF6F1;
-    --global-color-text: #606060;
-    --primary-color-text: #0A2C0F;
-} */
+html {
+    scroll-behavior: smooth;
+}

@@ -5,41 +5,70 @@
                 <div class="w-full lg:max-w-1/2 p-2.5 lg:pr-12.5 relative">
                     <div class="w-full h-full">
                         <img class="w-full aspect-100/98 md:aspect-100/65 m:aspect-100/104 rounded-[20px] object-cover"
-                            src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/faq-image.jpg">
+                            src="/images/faq-image.jpg">
                     </div>
                     <div
                         class="py-2.5 lg:py-3.75 px-3.75 lg:px-5 rounded-[10px] flex w-43.75 sm:w-50 justify-between items-center gap-2.5 bg-white absolute right-7.5 sm:right-10 lg:right-22.5 bottom-7.5 sm:bottom-10 lg:bottom-12.5">
                         <div>
                             <icons-svg-question />
                         </div>
-                        <h3 class="text-primary-text text-sm xs:text-base leading-5 font-plus-jakarta-sans font-bold">Answers You
+                        <h3 class="text-primary-text text-sm xs:text-base leading-5 font-plus-jakarta-sans font-bold">
+                            Answers You
                             Need !</h3>
                     </div>
                 </div>
                 <div class="flex flex-col p-2.5 gap-2.5 lg:gap-3.75 w-full lg:w-auto">
                     <base-text-content title="FAQ's" heading1="Your questions," heading2=" our expert answers">
                     </base-text-content>
-                    <div class="flex flex-col gap-7.5">
-                        <u-collapsible v-for="(faq, index) in faqs" :key="index" :open="activeIndex === index"
-                            @click="handleClick(index)">
-                            <u-button class="w-full bg-white p-3.75 lg:py-4.5 lg:px-5 text-primary-text text-lg font-bold font-plus-jakarta-sans flex justify-between rounded-2xl
+                    <div class="flex flex-col gap-7.5 ">
+                        <!-- <u-collapsible v-for="(faq, index) in faqs" :key="index" :open="activeIndex === index"
+                            @click="handleClick(index)" class="rounded-2xl overflow-hidden"
+                            :class="{ 'rounded-b-none': activeIndex === index }"
+                            :ui="{ content: 'data-[state=open]:animate-[collapsible-down_300ms_ease-out] data-[state=closed]:animate-[collapsible-up_300ms_ease-out] overflow-hidden' }">
+                            <u-button class="w-full bg-white p-3.75 lg:py-4.5 lg:px-5 text-primary-text text-lg font-bold font-plus-jakarta-sans flex justify-between 
                                         data-[state=open]:bg-primary-orange 
-                                          data-[state=open]:rounded-b-none
                                         data-[state=open]:border-b-[#ffffff1a]
                                         data-[state=open]:text-white
                                           cursor-pointer hover:bg-white
-                                          transition-all duration-300 ease-in-out group
-                                        " trailing-icon="dashicons:arrow-down-alt2"
-                                :ui="{ trailingIcon: 'group-data-[state=open]:rotate-180 transition-all duration-200' }">
+                                        transition-all duration-400 ease group"
+                                trailing-icon="dashicons:arrow-down-alt2" :ui="{
+                                    trailingIcon: 'group-data-[state=open]:rotate-180 transition-all duration-300',
+                                    base: 'rounded-none'
+                                }">
                                 <span class="text-start">{{ faq.question }}</span>
                             </u-button>
                             <template #content>
                                 <div
-                                    class="font-plus-jakarta-sans text-white pt-3.75 pr-12.5 pb-5 pl-5 bg-primary-orange rounded-b-2xl">
+                                    class=" font-plus-jakarta-sans text-white pt-3.75 pr-12.5 pb-5 pl-5 bg-primary-orange rounded-b-2xl">
                                     <p>{{ faq.answer }}</p>
                                 </div>
                             </template>
-                        </u-collapsible>
+                        </u-collapsible> -->
+                        <div v-for="(faq, index) in faqs" :key="index">
+                            <div class="rounded-2xl overflow-hidden"
+                                :class="{ 'rounded-b-none': activeIndex === index }">
+                                <u-button block @click="handleClick(index)" trailing-icon="dashicons:arrow-down-alt2"
+                                    :ui="{
+                                        trailingIcon: 'transition-all duration-200',
+                                        base: 'rounded-none'
+                                    }"
+                                    class="text-start w-full bg-white p-3.75 lg:py-4.5 lg:px-5 text-primary-text 
+                                    text-lg font-bold font-plus-jakarta-sans flex justify-betweentransition-all duration-400 ease cursor-pointer"
+                                    :class="{
+                                        'hover:bg-primary-orange text-white bg-primary-orange': activeIndex === index,
+                                        'bg-white hover:bg-white': activeIndex !== index
+                                    }
+                                        ">
+                                    {{ faq.question }}</u-button>
+                                <div class="font-plus-jakarta-sans text-white pt-3 pr-12.5 pb-5 pl-5 
+                                bg-primary-orange rounded-b-2xl transition-all duration-300" :class="{
+                                    'max-h-0 !py-0': activeIndex !== index,
+                                    'opacity-100 lg:max-h-20': activeIndex === index,
+                                }">
+                                    {{ faq.answer }}
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -49,6 +78,7 @@
     </div>
 </template>
 <script setup>
+
 const faqs = ref([
     {
         question: "What is an oil dropper used for?",
@@ -81,3 +111,4 @@ const handleClick = (index) => {
     }
 }
 </script>
+<style lang="scss" scoped></style>

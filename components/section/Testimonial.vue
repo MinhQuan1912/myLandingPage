@@ -1,6 +1,6 @@
 <template>
     <div
-        class="px-2.5 bg-primary-text bg-[url(https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/testimonial-bg.png)] bg-[position:center_center] bg-no-repeat bg-cover">
+        class="testimonial">
         <div class="xl:container mx-auto">
             <div class="py-12.5 lg:py-25 flex flex-col text-white gap-2.5 3xs:gap-5 lg:gap-15">
                 <div class="p-2.5 flex flex-col lg:flex-row lg:items-center gap-1.25 lg:gap-0">
@@ -22,7 +22,7 @@
                 <div class="p-2.5 flex flex-col lg:flex-row items-center gap-7.5 lg:gap-0">
                     <div class="w-full">
                         <img class="rounded-[20px] w-full object-cover aspect-[1/1.05] sm:aspect-[1/0.6] md:aspect-[1/1.114]"
-                            src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/testimonial-image.jpg">
+                            src="/images/testimonial-image.jpg">
                     </div>
                     <div class="lg:pl-12.5 w-full lg:w-70/100">
                         <!-- <swiper :modules="[Navigation, Autoplay]"
@@ -105,7 +105,7 @@ const testimonials = ref([
     {
         name: "Jenny Wilson",
         job: "Aromatherapist",
-        image: "https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/author-1.jpg",
+        image: "/images/author-1.jpg",
         content: `"These oil droppers are perfect for my essential oil blends! The precision and
     outstanding of Highly recommend many dropper bottles, but these are by far the best.
     No leaks, no waste—just pure convenience!"`,
@@ -113,7 +113,7 @@ const testimonials = ref([
     {
         name: "Michael Carter",
         job: "Aromatherapist",
-        image: "https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/author-3.jpg",
+        image: "/images/author-3.jpg",
         content: `"These oil droppers are perfect for my essential oil blends! The precision and
     outstanding of Highly recommend many dropper bottles, but these are by far the best.
     No leaks, no waste—just pure convenience!"`,
@@ -121,7 +121,7 @@ const testimonials = ref([
     {
         name: "Sophia Reynolds",
         job: "Herbalist",
-        image: "https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/author-2.jpg",
+        image: "/images/author-2.jpg",
         content: `"These oil droppers are perfect for my essential oil blends! The precision and
     outstanding of Highly recommend many dropper bottles, but these are by far the best.
     No leaks, no waste—just pure convenience!"`,
@@ -129,3 +129,13 @@ const testimonials = ref([
 ])
 
 </script>
+<style lang="scss" scoped>
+.testimonial  {
+    padding-inline: 10px;
+    background-color: var(--color-primary-text);
+    background-image: url(/images/testimonial-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>

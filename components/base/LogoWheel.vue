@@ -25,7 +25,7 @@ const props = withDefaults(defineProps < {
 } > (), {
     fill: 'white',
     background: 'transparent',
-    imageLink: 'https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/premium-quality-circle.svg',
+    imageLink: '/images/premium-quality-circle.svg',
     additionClass:''
 })
 </script>

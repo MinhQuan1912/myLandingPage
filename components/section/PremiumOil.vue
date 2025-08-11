@@ -14,7 +14,7 @@
                 <div class="p-2.5 pb-0 -mb-12.5 lg:-mb-25 sm:w-53/100 lg:w-auto">
                     <div class="w-full h-full">
                         <img class="w-full object-cover"
-                            src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/cta-image.png">
+                            src="/images/cta-image.png">
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
 <style lang="scss" scoped>
 .premium-oil {
     background-color: var(--color-primary-text);
-    background-image: url(https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/section-bg-shape-2.png);
+    background-image: url(/images/section-bg-shape-2.png);
     background-position: calc(100% + 40px) 100%;
     background-size: auto;
     background-repeat: no-repeat;

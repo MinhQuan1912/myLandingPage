@@ -1,13 +1,13 @@
-<template>
+<template >
     <div class="bg-primary-background px-2.5">
         <div class="xl:container mx-auto">
             <div class="py-12.5 flex gap-2.5 flex-wrap items-center sm:flex-col lg:flex-row lg:gap-0 xl:py-25">
                 <div class="p-2.5 w-full relative sm:w-3/5 lg:w-1/2 lg:pr-20">
                     <img class="w-full h-full object-cover"
-                        src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/about-image.png">
+                        src="/images/about-image.png">
                     <base-logo-wheel class="absolute top-2 right-2 lg:right-20 lg:top-4" background="#d1a132"
-                        addition="sm:w-27.5 lg:w-32.5 sm:h-27.5 lg:h-32.5"
-                        imageLink="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/about-section-heading-icon-cbd.svg">
+                        addition-class="sm:w-27.5 lg:w-32.5 sm:h-27.5 lg:h-32.5"
+                        imageLink="/images/about-section-heading-icon-cbd.svg">
                     </base-logo-wheel>
                 </div>
                 <div class="p-2.5 flex-1 flex flex-col gap-2.5 lg:gap-3.75">
@@ -28,8 +28,9 @@
                                         </template>
                                     </base-icon-content>
                                 </div>
-                                <base-button-link fillColor="#000000" arrow="bg-primary-text/10" text="About Us"
-                                addition-class="group-hover:bg-black group-hover:text-white hover:bg-black hover:text-white"/>
+                                <base-button-link fillColor="#000000" arrow="bg-primary-text/10 hover:bg-[#0A2C0F1A]" text="About Us"
+                                addition-class="group-hover:text-white hover:text-white"
+                                addition-span="!bg-black"/>
                             </div>
                             <div class="p-5 bg-white rounded-[20px] w-full sm:w-[calc(32%-15px)]">
                                     <icons-svg-logo/>

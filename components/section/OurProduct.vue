@@ -9,11 +9,12 @@
                         </base-text-content>
                     </div>
                     <div class="flex-1 flex items-center lg:justify-end">
-                        <base-button-link fillColor="#000000" arrow="bg-[#0A2C0F1A]" text="View All Products"
-                            addition-class="group-hover:bg-black group-hover:text-white hover:bg-black hover:text-white" />
+                        <base-button-link fillColor="#000000" arrow="bg-[#0A2C0F1A] hover:bg-[#0A2C0F1A]" text="View All Products"
+                            addition-class="group-hover:text-white hover:text-white" 
+                            addition-span="!bg-black"/>
                     </div>
                 </div>
-                <div class="p-2.5 grid gap-7.5 grid-cols-1 xs:grid-cols-2 xs:grid-rows-2 m:grid-cols-4 m:grid-rows-1">
+                <div class="p-2.5 grid gap-7.5 grid-cols-1 xs:grid-cols-2 m:grid-cols-4 ">
                     <div class="flex flex-col justify-between gap-2.5 items-center" v-for="(product, index) in products"
                         :key="index">
                         <div class="unded-[20px] w-full h-full ">
@@ -41,22 +42,22 @@
 <script setup lang="ts">
 const products = ref([
     {
-        img: "https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/product-img-1.jpg",
+        img: "/images/product-img-1.jpg",
         name: "Eco GLow Dropper",
         price: "$16.00"
     },
     {
-        img: "https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/product-img-2.jpg",
+        img: "/images/product-img-2.jpg",
         name: "Eco GLow Dropper",
         price: "$35.00"
     },
     {
-        img: "https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/product-img-3.jpg",
+        img: "/images/product-img-3.jpg",
         name: "Eco GLow Dropper",
         price: "$45.00"
     },
     {
-        img: "https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/product-img-4.jpg",
+        img: "/images/product-img-4.jpg",
         name: "Eco GLow Dropper",
         price: "$62.00"
     }

@@ -5,11 +5,11 @@
                 <div class="p-2.5 flex flex-col lg:flex-row gap-7.5 lg:gap-11.25 items-center relative sm:static">
                     <div class="w-69 xs:w-61/100 lg:min-w-39/100 sm:relative">
                         <img class="w-full object-cover"
-                            src="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/benefit-img.png">
+                            src="/images/benefit-img.png">
                         <base-logo-wheel addition-class="xs:w-30 xs:h-30"
                             class="absolute top-2.5 xs:top-0 right-2.5 xs:right-0"
                             background="var(--color-primary-orange)"
-                            imageLink="https://demo.awaikenthemes.com/sellsmart/cbd-oil/wp-content/uploads/2025/05/about-section-heading-icon-cbd.svg">
+                            imageLink="/images/about-section-heading-icon-cbd.svg">
                         </base-logo-wheel>
                     </div>
                     <div class="flex flex-col gap-2.5 lg:gap-3.75 h-full">
