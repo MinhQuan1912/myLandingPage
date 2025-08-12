@@ -43,7 +43,7 @@
                                     <p>{{ faq.answer }}</p>
                                 </div>
                             </template>
-                        </u-collapsible> -->
+</u-collapsible> -->
                         <div v-for="(faq, index) in faqs" :key="index">
                             <div class="rounded-2xl overflow-hidden"
                                 :class="{ 'rounded-b-none': activeIndex === index }">
@@ -53,7 +53,7 @@
                                         base: 'rounded-none'
                                     }"
                                     class="text-start w-full bg-white p-3.75 lg:py-4.5 lg:px-5 text-primary-text 
-                                    text-lg font-bold font-plus-jakarta-sans flex justify-betweentransition-all duration-400 ease cursor-pointer"
+                                    text-lg font-bold font-plus-jakarta-sans flex justify-between transition-all duration-400 ease cursor-pointer"
                                     :class="{
                                         'hover:bg-primary-orange text-white bg-primary-orange': activeIndex === index,
                                         'bg-white hover:bg-white': activeIndex !== index
@@ -63,7 +63,7 @@
                                 <div class="font-plus-jakarta-sans text-white pt-3 pr-12.5 pb-5 pl-5 
                                 bg-primary-orange rounded-b-2xl transition-all duration-300" :class="{
                                     'max-h-0 !py-0': activeIndex !== index,
-                                    'opacity-100 lg:max-h-20': activeIndex === index,
+                                    'opacity-100 max-h-30 lg:max-h-20': activeIndex === index,
                                 }">
                                     {{ faq.answer }}
                                 </div>
